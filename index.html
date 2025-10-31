@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="The introduction page for the course WDD131 - Dynamic Web Fundamentals - Edwin Rene Rodriguez Ortiz">
+    <meta name="author" content="Edwin Rene Rodriguez Ortiz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Edwin Rene Rodriguez Ortiz</title>
 </head>
 <body>
-    <h1>WDD 131 - Edwin Rene Rodriguez Ortiz</h1>
+
+<header>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/edwin-rene-rodriguez-ortiz-5b5a5171/" title="linkedIn">LinkedIn</a></li>
+            <li><a href="#" title="canvas">Canvas</a></li>
+            <li><a href="#" title="scripture">Scripture</a></li>
+            <li><a href="#" title="final project">Final Project</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Edwin René Rodríguez Ortiz</h1>
+    <div class="cards-container">
+        <section class="card">
+            <h2>About Me</h2>
+            <p>My name is Edwin but almost everyone calls me by my middle name René, so I'm Rene most of the times, I'm from CDMX, the mexican capital but I've living in Queretaro for almost 15 years now, my three kids were born here.</p>
+            <img src="images/profile.jpg" width="100" alt="A picture of myself, Edwin Rene Rodriguez Ortiz">
+            <figure>
+            <img src="images/escudo-de-queretaro.jpg" width="100" alt="Coat of arms of Queretaro, Mexico.">
+            </figure><figcaption>Queretaro's Coat of Arms</figcaption>
+            <p> Queretaro is the birthplace of Mexico, it's the place where the conspirators gathered to plot the independence of Mexico in 1810 </p>
+        </section>
+        
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org">MDN Reference</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://cssbattle.dev/"></a>CSS Battle</li>
+                <li><a href="https://imagecolorpicker.com">Image Color Picker</a></li>
+            </ul>
+            
+        </section>
+    </div>
+</main>
+<footer>
+    
+    <p>&copy; - <span id="currentYear"></span> Edwin René Rodríguez Ortiz - Queretaro, Mex.</p>
+    <p>Last Modified <span id="lastModified"></span></p>
+
+</footer>
+
 </body>
 </html>

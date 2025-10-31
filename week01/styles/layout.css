@@ -36,7 +36,7 @@
 .nav-menu a:hover {
     font-weight: 700;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: red; 
 }
 
 body {

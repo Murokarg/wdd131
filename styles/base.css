@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #085e99 ;
+    --secondary-color: #042a44;
+    --accent1-color: #fff;
+    --accent2-color: #99085e;
+    --main-font: "Nunito Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--main-font);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header span {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    list-style: none;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.nav-menu li {
+    flex: 1 1 auto;
+}
+.nav-menu a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    justify-content: space-around;
+    padding:0.75rem 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1px solid #000;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5rem 0 2rem 2rem;
+    font-size: 0.8rem;
+}
+
+.card {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0 auto;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*display: block;*/
+}
+
+.card h2{
+    text-align: center;
+    padding: 0 0 0.5rem 0;
+    
+}
+
+.card img{
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    margin: 0.75rem 1.5rem;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
