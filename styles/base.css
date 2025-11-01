@@ -1,6 +1,6 @@
 :root {
     --primary-color: #085e99 ;
-    --secondary-color: #042a44;
+    --secondary-color: #051f31;
     --accent1-color: #fff;
     --accent2-color: #99085e;
     --main-font: "Nunito Sans", sans-serif;
@@ -48,9 +48,14 @@ header span {
     padding:0.75rem 1rem;
 }
 
+.nav-menu a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--accent2-color) ;
+}
+
 main h1 {
     text-align: center;
-    margin-bottom: 1px solid #000;
 }
 
 .cards-container {
