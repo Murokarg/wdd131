@@ -1,0 +1,49 @@
+
+
+@media(max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.show {
+        display: flex;
+        background-color: var(--primary-color);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+    }
+
+    main h1 {
+        text-align: center;
+        font-weight: 200;
+    
+    }
+
+}
+
