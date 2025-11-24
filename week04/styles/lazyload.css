@@ -1,0 +1,31 @@
+/* Reset default margins/paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Make main take up available space */
+main {
+  display: flex;
+  justify-content: center;   /* centra horizontalmente */
+  align-items: center;       /* centra verticalmente */
+  min-height: 100vh;         /* ocupa toda la altura de la ventana */
+  flex-direction: column;    /* coloca las imágenes una debajo de otra */
+}
+
+main img {
+  max-width: 80%;            /* evita que se desborde */
+  height: auto;
+  margin: 10px 0;            /* espacio entre imágenes */
+}
+
+/* Style footer */
+footer {
+  height: 100px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
