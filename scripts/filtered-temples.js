@@ -14,7 +14,6 @@ hamburger.addEventListener('click', () => {
 })
 
 
-
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -38,7 +37,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/2018/400x250/Payson-Utah-Temple02.jpg"
   },
   {
     templeName: "Yigo Guam",
@@ -72,15 +71,86 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+  {
+    templeName: "Hamilton New Zealand",
+    location: "Hamilton, New Zealand",
+    dedicated: "1958, April, 20-22",
+    area: 45251,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hamilton-new-zealand/400x250/hamilton-new-zealand-lds-temple-942155-wallpaper.jpg"
+  },
+  {
+    templeName: "Montevideo Uruguay",
+    location: "Montevideo, Uruguay",
+    dedicated: "2001, March, 18",
+    area: 10700,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/montevideo-uruguay/400x250/montevideo-uruguay-temple-lds-83476-wallpaper.jpg"
+  },
+  {
+    templeName: "Manaus Brazil",
+    location: "Manaus, Brazil",
+    dedicated: "2012, June, 10",
+    area: 32032,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manaus-brazil/400x250/lds-temple-manaus-brazil-1085299-wallpaper.jpg"
+  },
+  {
+    templeName: "Ogden, Utah",
+    location: "Ogden, Utah",
+    dedicated: "1972, January, 18-20",
+    area: 112232,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/ogden-utah/400x250/ogden-utah-temple-1300442-wallpaper.jpg"
+  },
+  {
+    templeName: "Frankfurt, Germany",
+    location: "Frankfurt, Germany",
+    dedicated: "1987, August, 28-30",
+    area: 112232,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/frankfurt-germany/400x250/frankfurt-temple-1-2278179.jpg"
+  },
 ];
 
 createTempleCard(temples);
 
-const nonutahLink = document.querySelector("nonutah");
+const oldBtn = document.querySelector("#old");
+const newBtn = document.querySelector("#new");
+const largeBtn = document.querySelector("#large");
+const smallBtn = document.querySelector("#small");
+const homeBtn = document.querySelector("#home")
 
-nonutahLink.addEventListener("click", () => {
-  createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+
+function getYear(dedicatedString) {
+  if (!dedicatedString) return null;
+  const yearPart = dedicatedString.split(",")[0];
+  const year = parseInt(yearPart.trim());
+  return isNaN(year) ? null : year;
+}
+
+// getYear(temples.dedicated) < 1900
+// getYear(temples.dedicated) >= 2000
+
+
+oldBtn.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => getYear(temple.dedicated) < 1900));
+});
+
+newBtn.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => getYear(temple.dedicated) >= 2000));
+});
+
+largeBtn.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area >= 90000));
+});
+
+smallBtn.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area <= 10000));
+});
+
+homeBtn.addEventListener("click", () => {
+  createTempleCard(temples);
 });
 
 
