@@ -29,7 +29,7 @@
         background-color: var(--primary-color);
     }
 
-    main {
+    .pop-images {
         display: flex;
         flex-direction: column;
     }
@@ -39,9 +39,9 @@
         height: auto;
     }
 
-    main h1 {
+    main h2 {
         text-align: center;
-        font-weight: 200;
+        font-weight: 500;
     
     }
 
