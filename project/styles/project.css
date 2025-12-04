@@ -1,0 +1,59 @@
+:root {
+    --font: "Karla", sans-serif;
+    --main-color: #432818;
+    --accent01-color: #bb9457;
+    --accent02-color: #ddb892;
+    --font-color: #ede0d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font); 
+    display: grid;
+    grid-auto-rows: 150px ;
+    grid-template-columns: repeat (4, 1fr); 
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.name {
+    background-color:var(--main-color);
+    color: var(--font-color);
+    grid-column: 1 / 2 ;
+    padding: 1.5 rem;
+}
+
+.purpose {
+    background-color: var(--accent01-color);
+    /* color: var(--font-color); */
+    padding: 1rem;
+}
+
+.scenarios {
+    background-color: var(--accent02-color);
+    /* color: var(--font-color); */
+    padding: 1rem;
+}
+
+.color-schema {
+    background-color: var(--main-color);
+    color:  var(--font-color);
+    padding: 1rem;
+}
+
+.typography {
+    background-color: var(--accent01-color);
+    /* color: var(--font-color); */
+    padding: 1rem;
+}
+
+.wireframe {
+    background-color: var(--accent02-color);
+
+}
