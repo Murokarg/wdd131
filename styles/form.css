@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #4a148c;
+  --secondary-bg: #e3e2e6;
+  --text-color: #333;
+  --border-color: #ccc;
+  --hover-color: #f5f5f5;
+  --star-color: gold;
+  --star-inactive: #ddd;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.review-form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+  select, input[type="text"], input[type="date"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.star-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.star-label input {
+  display: none;
+}
+
+.star-label span {
+  font-size: 1.5rem;
+  color: var(--star-inactive);
+  transition: color 0.2s;
+}
+
+.star-label:hover span,
+.star-label input:checked ~ span {
+  color: var(--star-color);
+}
+
+.checkbox-group {
+  margin-top: 10px;
+}
+
+.checkbox-item {
+  margin: 5px 0;
+}
+
+.checkbox-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: auto;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #ddd;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.optional {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+.review-form-container {
+  padding: 15px;
+}
+.form-header {
+  font-size: 1.2rem;
+}
+    }

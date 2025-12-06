@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <div class="success">Thank you for your review!</div>
+    
+        <h2>Your Submission</h2>
+        <p>Product: <span id="productNameDisplay">Loading...</span></p>
+        <p>Rating: <span id="ratingDisplay">—</span></p>
+        <p>Date: <span id="dateDisplay">—</span></p>
+        <p>Features: <span id="featuresDisplay">—</span></p>
+        <p><>Review: <em><span id="reviewDisplay">—</span></em></p>
+        <p><>Name: <span id="userNameDisplay">Anonymous</span></p>
+    </div>
+
+    <div class="card">
+        <h2>Past Reviews (<span id="countDisplay">0</span> total)</h2>
+        <ul id="reviewsHistory" style="list-style: none; padding: 0;"></ul>
+    </div>
+
+</body>
+</html>
