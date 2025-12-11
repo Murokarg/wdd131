@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | El Árbol del Pan</title>
+  <meta name="author" content="Edwin Rene Rodriguez Ortiz">
+  <meta name="description" content="Special orders and deliveries for events or just to get to know us. We are in Querétaro, ready to serve you with a smile.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <h1>El Árbol del Pan</h1>
+    </div>
+    <!-- Hamburger menu (only visible in mobil version) -->
+    <button class="hamburger" id="hamburger" aria-label="Navigation Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- INTRODUCTION -->
+    <section class="contact-intro">
+      <h2>Let's talk! and knead the dough together</h2>
+      <p>
+        Do you want a cake for a special occasion? Are you planning an event and are in the look for snacks?
+        Or just wanted to know about ourselves?<br>
+        Write to us —we'd love to talk to you!.
+      </p>
+    </section>
+
+    <!-- FORM -->
+    <section class="contact-form-section">
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="fname">Full name *</label>
+          <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tel">Tel. (optional)</label>
+          <input type="tel" id="tel" name="tel">
+        </div>
+
+        <div class="form-group">
+          <label for="query">Comments, order, etc. *</label>
+          <select id="query" name="query" required>
+            <option value="">— Choose an option —</option>
+            <option value="consult">General query</option>
+            <option value="order">Special orders (cakes, events, restaurants)</option>
+            <option value="work">Work with us</option>
+            <option value="workshop">Bakery workshop</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required
+            placeholder="Tell us what's on your mind…"></textarea>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="privacity" name="privacy" required>
+          <label for="privacy">
+            I accept that <em>El Árbol del Pan</em> store my data to answer my query.
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <!-- ALTERNATIVE CONTACT INFO -->
+    <section class="contact-alternative">
+      <h3>Do you preferred to talk with us?</h3>
+      <p>
+        <strong>WhatsApp:</strong> <a href="https://wa.me/524421234567">+52 442 123 4567</a><br>
+        <strong>Tel:</strong> 442 123 4567<br>
+        <strong>Available hours:</strong> Mon–Fri, 9:00–18:00
+      </p>
+      <p>
+        <strong>Address:</strong> Av. Centenario 123, Querétaro<br>
+        <em>We are in front Constitution Square — Don miss out the view from our store!</em>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+  <!-- FOOTER -->
+    <div class="footer-contact">
+      <h3>Visit us</h3>
+      <p>Av. Centenario 123, Querétaro</p>
+      <p>Tel/WhatsApp: +52 442 123 4567</p>
+      <p>Hours: Mon–Sat 7:00–20:00 | Sun 8:00–14:00</p>
+    </div>
+    <div class="footer-social">
+      <h3>Follow us</h3>
+      <p>Instagram • Facebook</p>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 El Árbol del Pan.<br>Made with love and flour.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
